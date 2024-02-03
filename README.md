@@ -1,4 +1,3 @@
-HEAD
 Note: You should NOT open an issue with @zek-c, he will get mad if you don't put something simple (as proven [here](https://github.com/zek-c/Securly-Kill-V111/issues/38)).
 
 # KillCurly Working
